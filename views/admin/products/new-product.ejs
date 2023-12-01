@@ -1,0 +1,23 @@
+<%- include('../../shared/includes/head', { pageTitle: 'Add new product' }) %>
+<link rel="stylesheet" href="/styles/forms.css">
+<script src="./scripts/image-preview.js"></script>
+</head>
+<body>
+  <%- include('../../shared/includes/header') %>
+  <main>
+    <h1>Add new Product</h1>
+    <%- include('includes/product-form', { submitPath: '/admin/products', product: {
+      title: '',
+      summary: '',
+      price: '',
+      description: ''
+    },
+    imageRequired: true }) %>
+  </main>
+  <script>
+    window.history.pushState(null,null,null)
+      window.addEventListener('popstate',function(){  
+      window.history.pushState(null,null,null)  
+      })
+  </script>
+<%- include('../../shared/includes/footer') %>
