@@ -1,12 +1,12 @@
 {
-  "name": "web-dev-complete-guide",
+  "name": "Urvashi Upadhyay",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "start": "nodemon app.js"
   },
   "keywords": [],
-  "author": "Maximilian Schwarzmüller",
+  "author": "Urvashi Upadhyay",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
